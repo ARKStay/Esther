@@ -1,0 +1,5 @@
+ultralytics==8.0.192
+roboflow==1.1.7
+flask==3.0.0
+opencv-python==4.8.1.78
+numpy==1.26.0

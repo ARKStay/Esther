@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Plat Kendaraan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="static/img/esther.png" alt="Logo">
+            </div>
+            <a class="navbar-brand" href="/informasi">Informasi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aplikasi">Aplikasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/anggota">Anggota</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <h2>Proyek Deteksi Plat Kendaraan Secara Otomatis</h2>
+            <p>Proyek deteksi plat kendaraan otomatis menggunakan YOLOv8 merupakan bagian dari implementasi teknologi pemrosesan gambar dan deep learning untuk menciptakan sistem yang dapat mengenali plat nomor kendaraan secara otomatis dan efisien. Model YOLO (You Only Look Once) versi 8 digunakan sebagai landasan dalam pengembangan aplikasi ini. Penggunaan YOLOv8 memungkinkan proses deteksi plat nomor kendaraan dilakukan dengan kecepatan tinggi dan akurasi yang memadai. Kelompok kami bertujuan untuk memperluas cakupan aplikasi ini dengan menggabungkan teknologi Optical Character Recognition (OCR) guna mengenali dan mengekstrak teks yang terdapat pada plat nomor kendaraan yang berhasil terdeteksi. Dengan demikian, proyek ini tidak hanya fokus pada deteksi visual, tetapi juga pada pengenalan teks, membuka peluang integrasi yang luas dalam industri keamanan, manajemen lalu lintas, dan pengelolaan armada.</p>
+            <p>Pengembangan proyek ini menghadapi sejumlah tantangan, termasuk perluasan dataset yang representatif untuk melatih model dengan akurasi tinggi, pengoptimalan parameter model untuk meningkatkan kinerja deteksi, serta memastikan infrastruktur komputasi yang memadai untuk pemrosesan data yang kompleks. Kelompok kami berfokus pada peningkatan akurasi deteksi dan kecepatan respons sistem agar dapat digunakan secara praktis dalam situasi nyata. Selain itu, kami juga mempertimbangkan aspek keamanan data dan privasi pengguna dalam penggunaan teknologi ini.</p>
+            <p>Manfaat proyek ini mencakup peningkatan efisiensi dalam proses identifikasi kendaraan di berbagai bidang, termasuk manajemen parkir otomatis, pengawasan keamanan, dan pengelolaan armada transportasi. Dengan kemampuan deteksi yang handal dan integrasi dengan sistem pengenalan teks, proyek ini berpotensi menjadi solusi yang inovatif dalam peningkatan keamanan lalu lintas, manajemen armada, dan sistem identifikasi kendaraan secara otomatis.</p>
+        </div>
+    </div>
+
+    <div id="footer" class="mt-5">
+            <p1 class="footer-block">&copy; 2023 ESTHER. Hak Cipta Dilindungi. </p1>
+    </div>
+
+    <!-- Konten lainnya -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
